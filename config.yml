@@ -4,18 +4,12 @@ exporter_port: 9127
 pgbouncers:
   - dsn: "postgres://postgres:zRqdRIzBZCDEpmSEJSDyCjCijGIqGmus@shortline.proxy.rlwy.net:48035/railway?sslmode=disable"
     labels:
-      instance: "worker"
-      env: "prod"
-      id: "1"
+      alias: "pgbouncer_shortline"
 
   - dsn: "postgres://postgres:zRqdRIzBZCDEpmSEJSDyCjCijGIqGmus@mainline.proxy.rlwy.net:30214/railway?sslmode=disable"
     labels:
-      instance: "front"
-      env: "prod"
-      id: "2"
+      alias: "pgbouncer_mainline"
 
   - dsn: "postgres://postgres:zRqdRIzBZCDEpmSEJSDyCjCijGIqGmus@nozomi.proxy.rlwy.net:48720/railway?sslmode=disable"
     labels:
-      instance: "back"
-      env: "prod"
-      id: "3"
+      alias: "pgbouncer_nozomi"
