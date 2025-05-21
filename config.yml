@@ -5,14 +5,14 @@ pgbouncers:
   - dsn: "postgres://postgres:zRqdRIzBZCDEpmSEJSDyCjCijGIqGmus@shortline.proxy.rlwy.net:48035/railway?sslmode=disable"
     labels:
       instance: "worker-pgbouncer-prod"
-      pg_instance_id: "pgbouncer-1"
+      db_alias: "pgbouncer-1"
 
   - dsn: "postgres://postgres:zRqdRIzBZCDEpmSEJSDyCjCijGIqGmus@mainline.proxy.rlwy.net:30214/railway?sslmode=disable"
     labels:
       instance: "front-pgbouncer-prod"
-      pg_instance_id: "pgbouncer-2"
+      db_alias: "pgbouncer-2"
 
   - dsn: "postgres://postgres:zRqdRIzBZCDEpmSEJSDyCjCijGIqGmus@nozomi.proxy.rlwy.net:48720/railway?sslmode=disable"
     labels:
       instance: "back-pgbouncer-prod"
-      pg_instance_id: "pgbouncer-3"
+      db_alias: "pgbouncer-3"
